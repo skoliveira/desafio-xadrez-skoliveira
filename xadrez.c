@@ -52,6 +52,19 @@ int main() {
         printf("%d. Esquerda\n", k+1);
         k++;
     } while (k < movimento_rainha);
+
+    int movimento_cavalo[2] = {1,2};
+    printf("\nMovimentação do Cavalo:\n");
+    for (int l = 0; l < movimento_cavalo[0]; l++)
+    {
+        int m = 0;
+        while (m < movimento_cavalo[1])
+        {
+            printf("%d. Baixo\n", m+1);
+            m++;
+        }
+        printf("%d. Esquerda\n", m+1);
+    }
     
     return 0;
 }
